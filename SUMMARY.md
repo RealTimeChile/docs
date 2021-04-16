@@ -12,11 +12,11 @@
 
 * [Get Balance](account/get-balance.md)
 
+## SMS
+
+* [Send SMS](sms/send-sms.md)
+
 ## Errors
 
 * [Errors Codes](errors/errors-codes.md)
-
-## SMS
-
-* [Untitled](sms/untitled.md)
 
