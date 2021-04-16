@@ -18,6 +18,8 @@ In this POST Request, you should send the following _Form URL-Encoded_ parameter
 | **client\_id** | [_Get it from web panel_](https://www.rti-sms.com) |
 | **client\_secret** | [_Get it from web panel_](https://www.rti-sms.com) |
 
+To **manually** authorize and fetch **access\_token**, use this code:
+
 {% tabs %}
 {% tab title="Bash" %}
 ```bash
@@ -211,6 +213,8 @@ public class SendRequest
 ```
 {% endtab %}
 {% endtabs %}
+
+Make sure to replace `YOUR_CLIENT_ID_HERE` and `YOUR_CLIENT_SECRET_HERE` with your API client credentials.
 
 If the **Authentication** is successful, API will respond with the HTTP Status `HTTP/1.1 200 OK` and in the response body you will get the **access\_token** and the **validity\_period** accordingly.
 

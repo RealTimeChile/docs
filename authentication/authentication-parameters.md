@@ -2,7 +2,7 @@
 
 RealTime's SMS API implements **OAuth2** for it's authentication flow.
 
-**OAuth doesn’t share password data** but instead uses **authorization tokens** to prove an identity between consumers and service providers. **OAuth2** is an authentication protocol that allows you to approve one application interacting with another on your behalf without giving away your password. All the **tokens** \(_Client ID, Client Secret and Access Token_\) are securely encrypted with [JWT](https://jwt.io/).
+**OAuth doesn’t share password data** but instead uses **authorization tokens** to prove an identity between consumers and service providers. **OAuth2** is an authentication protocol that allows you to approve one application interacting with another on your behalf without giving away your password. All the **tokens** \(_`Client ID, Client Secret and Access Token`_\) are securely encrypted with [JWT](https://jwt.io/).
 
 #### Authentication Parameters <a id="authentication-parameters"></a>
 
