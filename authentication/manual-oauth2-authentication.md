@@ -1,8 +1,6 @@
 # Manual OAuth2 Authentication
 
-
-
-#### Manual OAuth2 Authentication <a id="manual-oauth2-authentication"></a>
+**Manual OAuth2 Authentication**
 
 In this **Chapter**, you will also find detailed example on how you can perform the above authentication steps **manually**, in case either your HTTP client or the HTTP library of your development language **does not** supports **OAuth2** authentication **natively**.
 
@@ -237,7 +235,7 @@ Content-Type: application/json
 Authorization: Bearer eyXXXXXXSFSFZDSFSFSAFA.eyJpFSFSAGASXXVxzvzxWQHeSeIxMDAFSFAVZZIzNzM1MzYzODM3MzMifQ.p0kdoDSFSfzx2a$Ju8RCPAtLoLadSCZadasfaFa43
 ```
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 All **not successful operations** are returned with a HTTP status different than`HTTP/1.1 200 OK`, such as `HTTP/1.1 401 Unauthorized` etc. For a **detailed list** of all possible returned errors, please see the [Errors Chapter](../errors/errors-codes.md).
 {% endhint %}
 
