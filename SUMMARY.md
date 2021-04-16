@@ -15,6 +15,7 @@
 ## SMS
 
 * [Send SMS](sms/send-sms.md)
+* [Get SMS Info](sms/get-sms-info.md)
 
 ## Errors
 
