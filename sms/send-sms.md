@@ -305,3 +305,7 @@ Remember - if you don't supply an **`access_token`** prefixed with the tag **`Be
 | 6 | All characters in **Hexadecimal Unicode UCS2 format**. e.g. for **āĉġ** SMS text should be **010101090121** |
 | 8 | **Latin Characters URL Encoded** \(à, è, ì, ò, ù\). e.g. for **àü** SMS text should be **%7F%7E** |
 
+{% hint style="warning" %}
+Before sending an SMS, you must remember that in Chile not all operators allow the use of special characters or encoding changes.
+{% endhint %}
+
