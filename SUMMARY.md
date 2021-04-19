@@ -16,6 +16,8 @@
 
 * [Send SMS](sms/send-sms.md)
 * [Get SMS Info](sms/get-sms-info.md)
+* [Receive Delivery Reports \(DLR\)](sms/receive-delivery-reports-dlr.md)
+* [Receive SMS \(MO\)](sms/receive-sms-mo.md)
 
 ## Errors
 

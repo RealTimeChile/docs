@@ -212,18 +212,28 @@ Please see the table bellow for the available fields in this object:
 
 #### SMS Info Object Fields <a id="sms-info-object-fields"></a>
 
-Field \| Type \| Description id \| **String** \| The **unique Id** of this submission. In this response, this field does not provide new information since you have requested the information of this submission using exactly the same Id. It is included in the response for convenience. timestamps \| **Object** \| This JSON Object contains the UNIX/EPOCH **timestamps** of the three stages of the sms submission. More information are included in a separate table below. info \| **Object** \| Contains 2 child objects, the object **status** providing indication of the delivery status of this SMS, as well as the object **operator** providing **accurate information** of the network operator to which this SMS was sent.
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The **unique Id** of this submission. In this response, this field does not provide new information since you have requested the information of this submission using exactly the same Id. It is included in the response for convenience. |
+| timestamps | Object | This JSON Object contains the UNIX/EPOCH **timestamps** of the three stages of the sms submission. More information are included in a separate table below. |
+| info | Object | Contains 2 child objects, the object **status** providing indication of the delivery status of this SMS, as well as the object **operator** providing **accurate information** of the network operator to which this SMS was sent. |
 
 #### Field **timestamps** structure <a id="field-timestamps-structure"></a>
 
-Field \| Type \| Description registered \| **Integer** \| Timestamp in which a **single SMS submission** was registered \(but **not yet** send by\) to **RealTime's** system. This value could not be **zero**. sent \| **Integer** \| Timestamp in which a **single SMS submission** was sent to **recipient's** network operator. done \| **Integer** \| Timestamp in which we got a **final** outcome from a **single SMS submission**. Either if the SMS is **DELIVERED**, or **REJECTED** by the network, or **EXPIRED** etc, all such events specify a **final** event.
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| registered | Integer | Timestamp in which a **single SMS submission** was registered \(but **not yet** send by\) to **RealTime's** system. This value could not be **zero**. |
+| sent | Integer | Timestamp in which a **single SMS submission** was sent to **recipient's** network operator. |
+| done | Integer | Timestamp in which we got a **final** outcome from a **single SMS submission**. |
+
+Either if the SMS is **DELIVERED**, or **REJECTED** by the network, or **EXPIRED** etc, all such events specify a **final** event.
 
 #### Field **info**/**status** structure <a id="field-info-status-structure"></a>
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| status | "String" | Specifies the **delivery status** of a **single SMS submission**. |
-| code | "String" | The numerical representation of **status** field. |
+| status | **String** | Specifies the **delivery status** of a **single SMS submission**. |
+| code | **String** | The numerical representation of **status** field. |
 
 The above **status** field could take one of the **following** values:
 
